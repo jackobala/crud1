@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e8f7bc27a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Titulo -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Meus produtos</h4>
+                <hr/>
+            </div>
+        </div>
+
+        <!--Barra de navegação-->
+    <nav class="barraLateral">
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i> <a href="index.html">home</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-tag"></i> <a href="controle-clientes.html">Produtos</a>
+            </li>
+        </ul>
+    </nav>
+
+        <!-- Botão para adicionar -->
+        <div class="row">
+            <div class="col-sm-3">
+                <button id="btn-adicionar" class="btn btn-custom btn-sm  " data-bs-toggle="modal"
+                    data-bs-target="#modal-cliente">Adicionar</button>
+            </div>
+        </div>
+
+        <!-- Tabela -->
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <table class="table custom-table table-hover" class="tabela">
+                    <thead>
+                        <tr class="tipo">
+                            <!-- 
+                            <th>Id</th>
+                            <th>Nome </th>
+                            <th>CPF </th>
+                            <th>E-mail </th>
+                            <th>Telefone </th>
+                            <th>Data de cadastro</th> 
+                            
+                            <th></th>
+                            -->
+                            <th class="tipo">Id</th>
+                            <th class="tipo">Nome</th>
+                            <th class="tipo">Valor</th>
+                            <th class="tipo">Estoque</th>
+                            <th class="tipo">Observação</th>
+                            <th class="tipo">Data de cadastro</th> 
+                            <th class="tipo">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- The Modal -->
+        <div class="modal" id="modal-cliente">
+            <div class="modal-dialog">
+                <div class="modal-content custom-modal">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Adicionar produto</h4>
+                        <button type="button" class="btn-close"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <div class="row">
+
+                            <div class="col-sm-2">
+                                <label for="id" class="form-label">Id</label>
+                                <input id="id" type="text" disabled class="form-control">
+                            </div>
+
+                            <div class="col-sm-10">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input id="nome" type="text" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="quantidadeEstoque" class="form-label">Quantidade</label>
+                                <input id="quantidadeEstoque" type="text" class="form-control">
+                            </div>
+
+                            <div class="col-sm-2">
+                                <label for="observacao" class="form-label">Obs</label>
+                                <input id="observacao" type="text" class="form-control">
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="valor" class="form-label">Valor</label>
+                                <input id="valor" type="text" class="form-control" maxlength="14">
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="dataCadastro" class="form-label">Data </label>
+                                <input id="dataCadastro" type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button id="btn-salvar" type="button" class="btn btn-custom btn-sm">Salvar</button>
+                        <button id="btn-cancelar" type="button" class="btn btn-light btn-sm" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/model/Cliente.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/controle-cliente.js"></script>
+</body>
+
+</html>

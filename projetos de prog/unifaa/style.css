@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: rgb(12, 23, 36);
+}
+
+h1 {
+    color: antiquewhite;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #192535;
+    color: aliceblue;    
+}
+
+nav i {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+}
+
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #192535;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: antiquewhite;
+    width: 50%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h2 {
+    color: #ff00bf;
+}
+
+.card-body ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.card-body li {
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    margin-top: 20px;
+}
+
+.homep {
+    color: #ff00bf;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+
+
+h4 {
+    font-size: 35px;
+    color: #ffffff;
+    padding-top: 35px;
+}
+
+
+.custom-table, .tabela {
+    background-color: #233347;
+}
+
+.btn-custom {
+    background-color: #ff00bf;
+    color: antiquewhite;
+    font-weight: bold;
+}
+.btn-custom:hover {
+    background-color: #f099ed;
+}
+
+.custom-modal {
+    background-color: #1e2c3f;
+    color: aliceblue;
+}
